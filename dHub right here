@@ -1,0 +1,461 @@
+-- not obfusecated cuz moonsec v3 is broken
+local dawgHub = Instance.new("ScreenGui")
+local dHub = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local AutoParry = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local SpeedUp = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local AntiBan = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HeadLockBall = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local HJ = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TPBallAutoParry = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local bottom = Instance.new("Frame")
+local UserName = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local hide = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local notif = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local yessa = Instance.new("Frame")
+local daimage = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+dawgHub.Name = "dawgHub"
+dawgHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+dawgHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+dawgHub.ResetOnSpawn = false
+
+dHub.Name = "dHub"
+dHub.Parent = dawgHub
+dHub.AnchorPoint = Vector2.new(0.5, 0.5)
+dHub.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+dHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dHub.BorderSizePixel = 0
+dHub.Position = UDim2.new(0.488784313, 0, 0.498800576, 0)
+dHub.Size = UDim2.new(0, 330, 0, 263)
+dHub.Visible = false
+dHub.ZIndex = 55555
+
+UICorner.Parent = dHub
+
+title.Name = "title"
+title.Parent = dHub
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(-0.00153780845, 0, 0.0528188497, 0)
+title.Size = UDim2.new(0, 330, 0, 26)
+title.Font = Enum.Font.FredokaOne
+title.Text = "🎃DawgHub🎃 | Beta | ..USER.."
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+AutoParry.Name = "Auto Parry"
+AutoParry.Parent = dHub
+AutoParry.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+AutoParry.BackgroundTransparency = 0.050
+AutoParry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoParry.BorderSizePixel = 0
+AutoParry.Position = UDim2.new(0.0265489984, 0, 0.167429298, 0)
+AutoParry.Size = UDim2.new(0, 311, 0, 29)
+AutoParry.Font = Enum.Font.FredokaOne
+AutoParry.Text = "🎃Auto Parry"
+AutoParry.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoParry.TextScaled = true
+AutoParry.TextSize = 14.000
+AutoParry.TextWrapped = true
+
+UICorner_2.Parent = AutoParry
+
+SpeedUp.Name = "Speed Up"
+SpeedUp.Parent = dHub
+SpeedUp.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+SpeedUp.BackgroundTransparency = 0.050
+SpeedUp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedUp.BorderSizePixel = 0
+SpeedUp.Position = UDim2.new(0.0210312344, 0, 0.281332791, 0)
+SpeedUp.Size = UDim2.new(0, 311, 0, 29)
+SpeedUp.Font = Enum.Font.FredokaOne
+SpeedUp.Text = "🎃Speed Up(NO ABILITY NEEDED)"
+SpeedUp.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedUp.TextScaled = true
+SpeedUp.TextSize = 14.000
+SpeedUp.TextWrapped = true
+
+UICorner_3.Parent = SpeedUp
+
+AntiBan.Name = "AntiBan"
+AntiBan.Parent = dHub
+AntiBan.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+AntiBan.BackgroundTransparency = 0.050
+AntiBan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiBan.BorderSizePixel = 0
+AntiBan.Position = UDim2.new(0.0210312344, 0, 0.394457728, 0)
+AntiBan.Size = UDim2.new(0, 311, 0, 29)
+AntiBan.Font = Enum.Font.FredokaOne
+AntiBan.Text = "🎃Anti Ban"
+AntiBan.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiBan.TextScaled = true
+AntiBan.TextSize = 14.000
+AntiBan.TextWrapped = true
+
+UICorner_4.Parent = AntiBan
+
+HeadLockBall.Name = "HeadLockBall"
+HeadLockBall.Parent = dHub
+HeadLockBall.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+HeadLockBall.BackgroundTransparency = 0.050
+HeadLockBall.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HeadLockBall.BorderSizePixel = 0
+HeadLockBall.Position = UDim2.new(0.0235186946, 0, 0.507971883, 0)
+HeadLockBall.Size = UDim2.new(0, 311, 0, 29)
+HeadLockBall.Font = Enum.Font.FredokaOne
+HeadLockBall.Text = "🎃Lock Ball (PATCHED)"
+HeadLockBall.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeadLockBall.TextScaled = true
+HeadLockBall.TextSize = 14.000
+HeadLockBall.TextWrapped = true
+
+UICorner_5.Parent = HeadLockBall
+
+HJ.Name = "HJ"
+HJ.Parent = dHub
+HJ.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+HJ.BackgroundTransparency = 0.050
+HJ.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HJ.BorderSizePixel = 0
+HJ.Position = UDim2.new(0.0210312344, 0, 0.618354797, 0)
+HJ.Size = UDim2.new(0, 311, 0, 29)
+HJ.Font = Enum.Font.FredokaOne
+HJ.Text = "🎃High Jump(NO ABILITY NEEDED)"
+HJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+HJ.TextScaled = true
+HJ.TextSize = 14.000
+HJ.TextWrapped = true
+
+UICorner_6.Parent = HJ
+
+TPBallAutoParry.Name = "TP Ball AutoParry"
+TPBallAutoParry.Parent = dHub
+TPBallAutoParry.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TPBallAutoParry.BackgroundTransparency = 0.050
+TPBallAutoParry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TPBallAutoParry.BorderSizePixel = 0
+TPBallAutoParry.Position = UDim2.new(0.0270918421, 0, 0.731140256, 0)
+TPBallAutoParry.Size = UDim2.new(0, 311, 0, 29)
+TPBallAutoParry.Font = Enum.Font.FredokaOne
+TPBallAutoParry.Text = "🎃TP Ball Auto Parry (STILL TESTING)"
+TPBallAutoParry.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPBallAutoParry.TextScaled = true
+TPBallAutoParry.TextSize = 14.000
+TPBallAutoParry.TextWrapped = true
+
+UICorner_7.Parent = TPBallAutoParry
+
+bottom.Name = "bottom"
+bottom.Parent = dawgHub
+bottom.AnchorPoint = Vector2.new(0.5, 0.5)
+bottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bottom.BackgroundTransparency = 1.000
+bottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bottom.BorderSizePixel = 0
+bottom.Position = UDim2.new(0.123697914, 0, 0.898622036, 0)
+bottom.Size = UDim2.new(0, 285, 0, 103)
+
+UserName.Name = "UserName"
+UserName.Parent = bottom
+UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserName.BackgroundTransparency = 1.000
+UserName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserName.BorderSizePixel = 0
+UserName.Position = UDim2.new(0.171929777, 0, 0.460900158, 0)
+UserName.Size = UDim2.new(0, 229, 0, 39)
+UserName.Font = Enum.Font.FredokaOne
+UserName.Text = "username: EEEEE"
+UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserName.TextScaled = true
+UserName.TextSize = 14.000
+UserName.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.06, Color3.fromRGB(255, 128, 0)), ColorSequenceKeypoint.new(0.09, Color3.fromRGB(255, 200, 0)), ColorSequenceKeypoint.new(0.13, Color3.fromRGB(195, 255, 0)), ColorSequenceKeypoint.new(0.17, Color3.fromRGB(102, 255, 0)), ColorSequenceKeypoint.new(0.21, Color3.fromRGB(0, 255, 115)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(0, 255, 213)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(0, 157, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(0, 38, 255)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(21, 0, 255)), ColorSequenceKeypoint.new(0.38, Color3.fromRGB(38, 0, 255)), ColorSequenceKeypoint.new(0.42, Color3.fromRGB(85, 0, 255)), ColorSequenceKeypoint.new(0.45, Color3.fromRGB(162, 0, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(225, 0, 255)), ColorSequenceKeypoint.new(0.55, Color3.fromRGB(255, 0, 132)), ColorSequenceKeypoint.new(0.62, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(255, 0, 187)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(157, 0, 255)), ColorSequenceKeypoint.new(0.88, Color3.fromRGB(157, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient.Parent = UserName
+
+hide.Name = "hide"
+hide.Parent = dawgHub
+hide.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+hide.BackgroundTransparency = 0.150
+hide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hide.BorderSizePixel = 0
+hide.Position = UDim2.new(0, 0, 0.23031494, 0)
+hide.Size = UDim2.new(0, 81, 0, 38)
+hide.Font = Enum.Font.FredokaOne
+hide.Text = "😈Hide😈"
+hide.TextColor3 = Color3.fromRGB(255, 255, 255)
+hide.TextScaled = true
+hide.TextSize = 14.000
+hide.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = hide
+
+notif.Name = "notif"
+notif.Parent = dawgHub
+notif.AnchorPoint = Vector2.new(0.5, 0.5)
+notif.BackgroundColor3 = Color3.fromRGB(255, 136, 0)
+notif.BorderColor3 = Color3.fromRGB(0, 0, 0)
+notif.BorderSizePixel = 0
+notif.Position = UDim2.new(1.20000005, 0, 0.754999995, 0)
+notif.Size = UDim2.new(0, 194, 0, 49)
+
+UICorner_9.Parent = notif
+
+yessa.Name = "yessa"
+yessa.Parent = notif
+yessa.AnchorPoint = Vector2.new(0.5, 0.5)
+yessa.BackgroundColor3 = Color3.fromRGB(255, 136, 0)
+yessa.BorderColor3 = Color3.fromRGB(0, 0, 0)
+yessa.BorderSizePixel = 2
+yessa.Position = UDim2.new(0.0541237108, 0, 0.489795923, 0)
+yessa.Rotation = 45.500
+yessa.Size = UDim2.new(0, 64, 0, 67)
+
+daimage.Name = "da image"
+daimage.Parent = notif
+daimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+daimage.BackgroundTransparency = 1.000
+daimage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+daimage.BorderSizePixel = 0
+daimage.Position = UDim2.new(-0.15152669, 0, -0.0816326514, 0)
+daimage.Size = UDim2.new(0, 79, 0, 57)
+daimage.Image = "rbxassetid://15085742535"
+daimage.ScaleType = Enum.ScaleType.Crop
+
+TextLabel.Parent = notif
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.327854425, 0, -0.0204081628, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "DawgHub [HALLOWEEN] | Loaded"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function GJBB_fake_script() -- title.LocalScript 
+	local script = Instance.new('LocalScript', title)
+
+	while true do
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | E"
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EA"
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EAS"
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EASY"
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EASY."
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EASY.G"
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EASY.GG"
+		wait(1)
+		script.Parent.Text = ""
+		wait(1)
+		script.Parent.Text = "🎃DawgHub🎃 | Beta | EASY.GG"
+		wait(1)
+		script.Parent.Text = ""
+	end
+end
+coroutine.wrap(GJBB_fake_script)()
+local function REVR_fake_script() -- AutoParry.LocalScript 
+	local script = Instance.new('LocalScript', AutoParry)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().ScriptConfig = {
+			-- Distance in stud before the automatic triggers,
+			-- you may change even after you have ran the script if you desire!
+			-- Just be sure to REMOVE the loadstring, or else you will face some... issues
+			DistanceBeforeParry = 48,
+		}
+		local plyrs = game.Players
+		local plyr = plyrs.LocalPlayer
+		local hum = plyr.Character:FindFirstChildOfClass("Humanoid")
+		if hum.Health == 0.5 then
+			hum.Health = 100
+		end
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+		game:GetService("Workspace").Balls.ChildAdded:Connect(function(child)
+			local trackTask = task.spawn(function()
+				local ball = child
+				while task.wait() do
+					if string.find(ball.Color.Name:lower() or ball.BrickColor.Name:lower(), "red") then
+						while LocalPlayer:DistanceFromCharacter(ball.CFrame.Position)
+							> getgenv().ScriptConfig.DistanceBeforeParry do
+							task.wait()
+						end
+						local ReplicatedStorage = game:GetService("ReplicatedStorage")
+						ReplicatedStorage.Remotes.ParryButtonPress:Fire()
+						ReplicatedStorage.Remotes.ParryButtonPress:Fire()
+					end
+				end
+			end)
+			child.Destroying:Connect(function()
+				task.cancel(trackTask)
+			end)
+		end)
+	end)
+end
+coroutine.wrap(REVR_fake_script)()
+local function VCID_fake_script() -- SpeedUp.LocalScript 
+	local script = Instance.new('LocalScript', SpeedUp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plyr = game.Players.LocalPlayer
+		local char = plyr.Character
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		hum.WalkSpeed = 80
+	end)
+end
+coroutine.wrap(VCID_fake_script)()
+local function DWFE_fake_script() -- AntiBan.Script 
+	local script = Instance.new('Script', AntiBan)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait(2)
+			if game.ReplicateStorage.Ban:FireServer() then
+				game.ReplicatedStorage.Unban:FireServer()
+				game.ReplicatedStorage.Unban:FireAllClients()
+				local method = "(u.ban[fire=false]\nu.unban[fire=true])"
+				print(method)
+			end
+		end
+	end)
+end
+coroutine.wrap(DWFE_fake_script)()
+local function BGSU_fake_script() -- HeadLockBall.LocalScript 
+	local script = Instance.new('LocalScript', HeadLockBall)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ball = game.Workspace.Balls
+		if string.find(ball.BrickColor.Name:lower(), "red") then
+			local plyrs = game.Players
+			local plyr = plyrs.LocalPlayer
+			local char = plyr.Character
+			char.Position = ball
+			char.PrimaryPart.Position = ball
+		end
+	end)
+end
+coroutine.wrap(BGSU_fake_script)()
+local function OBWTDT_fake_script() -- dHub.LocalScripty 
+	local script = Instance.new('LocalScript', dHub)
+
+	local frame = script.Parent
+	frame.Active = true
+	frame.Selectable = true
+	frame.Draggable = true
+end
+coroutine.wrap(OBWTDT_fake_script)()
+local function PMHWQ_fake_script() -- HJ.LocalScript 
+	local script = Instance.new('LocalScript', HJ)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plyrs = game.Players
+		local plyr = plyrs.LocalPlayer
+		local hum = plyr.Character:FindFirstChildOfClass("Humanoid")
+		hum.UseJumpPower = true
+		hum.JumpPower = 100
+	end)
+end
+coroutine.wrap(PMHWQ_fake_script)()
+local function IHMRNML_fake_script() -- TPBallAutoParry.LocalScript 
+	local script = Instance.new('LocalScript', TPBallAutoParry)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().ScriptConfig = {
+			-- Distance in stud before the automatic triggers,
+			-- you may change even after you have ran the script if you desire!
+			-- Just be sure to REMOVE the loadstring, or else you will face some... issues
+			DistanceBeforeParry = 48,
+		}
+		local plyrs = game.Players
+		local plyr = plyrs.LocalPlayer
+		local hum = plyr.Character:FindFirstChildOfClass("Humanoid")
+		if hum.Health == 0.5 then
+			hum.Health = 100
+		end
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+		game:GetService("Workspace").Balls.ChildAdded:Connect(function(child)
+			local trackTask = task.spawn(function()
+				local ball = child
+				while task.wait() do
+					if string.find(ball.Color.Name:lower() or ball.BrickColor.Name:lower(), "red") then
+						plyr.Position = ball.CFrame.Position or ball.Position
+						plyr.Character.PivotTo(ball.CFrame.Position)
+						while LocalPlayer:DistanceFromCharacter(ball.CFrame.Position)
+							> getgenv().ScriptConfig.DistanceBeforeParry do
+							task.wait()
+						end
+						local ReplicatedStorage = game:GetService("ReplicatedStorage")
+						ReplicatedStorage.Remotes.ParryButtonPress:Fire()
+						ReplicatedStorage.Remotes.ParryButtonPress:Fire()
+					end
+				end
+			end)
+			child.Destroying:Connect(function()
+				task.cancel(trackTask)
+			end)
+		end)
+	end)
+end
+coroutine.wrap(IHMRNML_fake_script)()
+local function IXKHB_fake_script() -- UserName.LocalScript 
+	local script = Instance.new('LocalScript', UserName)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(IXKHB_fake_script)()
+local function ARQUB_fake_script() -- hide.LocalScript 
+	local script = Instance.new('LocalScript', hide)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local dhub = script.Parent.Parent.dHub
+		if dhub.Visible == true then
+			dhub.Visible = false
+			script.Parent.Text = "Hide"
+		else if dhub.Visible == false then
+				dhub.Visible = true
+				script.Parent.Text = "Show"
+			end
+		end
+	end)
+end
+coroutine.wrap(ARQUB_fake_script)()
+local function HRMPZM_fake_script() -- notif.anim_notif 
+	local script = Instance.new('LocalScript', notif)
+
+	local animation = game:GetService("TweenService")
+	-- Animation Properties
+	script.Parent:TweenPosition(UDim2.new(0.932, 0,0.755, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce, 0.5)
+	wait(5)
+	script.Parent:TweenPosition(UDim2.new(1.2, 0,0.755, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, 0.5)
+end
+coroutine.wrap(HRMPZM_fake_script)()
